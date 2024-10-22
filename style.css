@@ -483,4 +483,13 @@ footer {
     height: 100%;
     object-fit: contain;
   }
+
+  #scrollingImage {
+    position: fixed; /* Keep it fixed in the viewport */
+    top: 200px; /* Initial vertical position */
+    left: 20px; /* Initial horizontal position */
+    width: 50px; /* Adjust size as needed */
+    z-index: 10; /* Ensure it appears above other elements */
+    pointer-events: none; /* Prevent interaction */
+  }
 }
