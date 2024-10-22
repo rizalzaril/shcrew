@@ -406,18 +406,6 @@ footer {
   font-size: 14px;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
-  #about img {
-    max-width: 50%; /* Adjust image size for medium screens */
-    transform: scale(1) rotate(-3deg); /* Slightly less rotation */
-  }
-
-  #about .about-history {
-    font-size: 14px; /* Smaller font size for medium screens */
-  }
-}
-
 @media (max-width: 768px) {
   ul.menu {
     display: none;
@@ -492,21 +480,5 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
-}
-
-@media (max-width: 480px) {
-  #about {
-    flex-direction: column; /* Stack elements vertically */
-    gap: 20px; /* Reduced gap on small screens */
-  }
-
-  #about img {
-    max-width: 80%; /* Make the image wider */
-    transform: scale(1) rotate(0); /* Remove rotation for very small screens */
-  }
-
-  #about .about-history {
-    font-size: 12px; /* Smallest font size for extra small screens */
   }
 }
