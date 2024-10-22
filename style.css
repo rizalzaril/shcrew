@@ -484,12 +484,23 @@ footer {
     object-fit: contain;
   }
 
+  #gallery .slide .slide-item:nth-child(3) {
+    left: 50%;
+  }
+  #gallery .slide .slide-item:nth-child(4) {
+    left: calc(50% + 0px);
+  }
+  #gallery .slide .slide-item:nth-child(5) {
+    left: calc(50% + 0px);
+  }
+
+  /* here n = 0, 1, 2, 3,... */
+  #gallery .slide .slide-item:nth-child(n + 5) {
+    left: calc(5% + 60px);
+    opacity: 0;
+  }
+
   #scrollingImage {
-    position: fixed; /* Keep it fixed in the viewport */
-    top: 200px; /* Initial vertical position */
-    left: 20px; /* Initial horizontal position */
     width: 50px; /* Adjust size as needed */
-    z-index: 10; /* Ensure it appears above other elements */
-    pointer-events: none; /* Prevent interaction */
   }
 }

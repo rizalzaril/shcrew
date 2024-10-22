@@ -109,7 +109,7 @@ ScrollTrigger.create({
     gsap.to(scrollingImage, {
       duration: 2.5,
       ease: "elastic.out(1,0.3)",
-      x: window.innerWidth - 120,
+      x: window.innerWidth - 60,
       y: 20,
       ease: "slow.out",
     });
