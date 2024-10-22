@@ -483,20 +483,4 @@ footer {
     height: 100%;
     object-fit: contain;
   }
-
-  #gallery .slide .slide-item:nth-child(3) {
-    left: 50%;
-  }
-  #gallery .slide .slide-item:nth-child(4) {
-    left: calc(50% + 0px);
-  }
-  #gallery .slide .slide-item:nth-child(5) {
-    left: calc(50% + 0px);
-  }
-
-  /* here n = 0, 1, 2, 3,... */
-  #gallery .slide .slide-item:nth-child(n + 5) {
-    left: calc(5% + 60px);
-    opacity: 0;
-  }
 }
