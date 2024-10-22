@@ -250,7 +250,7 @@ section {
 
 /* here n = 0, 1, 2, 3,... */
 #gallery .slide .slide-item:nth-child(n + 6) {
-  left: calc(50% + 660px);
+  left: calc(5% + 660px);
   opacity: 0;
 }
 
