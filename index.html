@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shcrew Graffiti</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./slider_style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <img
+      id="scrollingImage"
+      src="./assets/images/pilox.png"
+      alt="Pilox Image"
+    />
+
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <h1 class="logo">Shcrew.id</h1>
+        <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+          &#9776;
+          <!-- Initial Hamburger icon -->
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="banner-overlay">
+        <img
+          src="./assets/images/SH MEMBER.png"
+          alt="Banner Graffiti"
+          class="banner-img"
+        />
+      </div>
+      <div class="hero-content">
+        <h2>Express Your Graffiti</h2>
+        <p>
+          Shcrew, a crew of passionate graffiti artists dedicated to street art.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <img
+        src="./assets/images/SH-01.jpg"
+        alt="Shcrew Graffiti"
+        class="about-img"
+      />
+      <div class="about-history">
+        <h2>About Us</h2>
+        <br />
+        <p>
+          Crew asal Kemayoran Jakarta Pusat ini terbentuk di awal Maret 2023
+          dengan tujuan sederhana yaitu: "nyeni bareng tanpa ada yang merasa
+          paling jago". Kenapa namanya "Still Humble"? Karena di crew ini, kita
+          semua setara. Nggak ada yang lebih hebat atau paling keren dalam
+          graffiti.
+        </p>
+        <br />
+        <p>
+          Kita saling belajar, saling ngasih referensi, dan saling support buat
+          berkembang bareng. Buat SH crew, graffiti bukan cuma soal ngegambar di
+          tembok, tapi juga soal kebersamaan dan saling menghargai. Kita suka
+          tuker ide, nge-share teknik, dan kasih motivasi biar semua bisa lebih
+          baik. Intinya, kita maju bareng-bareng tanpa ninggalin satu sama lain.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2 class="our-writer">Our Writers</h2>
+
+      <div id="gallerySlide" class="gallery-slide">
+        <div class="slide">
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-06.jpg')"
+          ></div>
+
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-04.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-05.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-07.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-08.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-09.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-10.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-11.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-12.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-13.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-14.jpg')"
+          ></div>
+
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-16-16.jpg')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/yosk.png')"
+          ></div>
+          <div
+            class="slide-item"
+            style="background-image: url('./assets/images/SH-15.jpg')"
+          ></div>
+
+          <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="our-writer">Gallery</h2>
+      <div class="gallery">
+        <img
+          src="./assets/images/SH-03.jpg.png"
+          alt="Blockbuster SH"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-04.jpg"
+          alt="Bier"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-05.jpg"
+          alt="Dans"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-06.jpg"
+          alt="Zaril"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-07.jpg"
+          alt="Jord"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-08.jpg"
+          alt="JNZS"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-09.jpg"
+          alt="Kency"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-10.jpg"
+          alt="Frad"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-11.jpg"
+          alt="Cluzs"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-12.jpg"
+          alt="Zarke"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-13.jpg"
+          alt="Febs"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-14.jpg"
+          alt="Deat"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/SH-16-16.jpg"
+          alt="Zuhr"
+          onclick="openModal(this)"
+        />
+        <img
+          src="./assets/images/yosk.png"
+          alt="Yosk"
+          onclick="openModal(this)"
+        />
+      </div>
+
+      <!-- Modal -->
+      <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-image">
+        <img src="./assets/images/SH-15.jpg" alt="" />
+      </div>
+      <h2>Contact Us</h2>
+      <p>Follow us on social media or send us a message to collaborate!</p>
+      <!-- <ul>
+        <li>Email: info@shcrew.com</li>
+        <li>Instagram: @shcrew_graffiti</li>
+      </ul> -->
+    </section>
+
+    <div class="social-media">
+      <a
+        href="https://www.instagram.com/s_humblecru?igsh=MXg5MWllNTlvZDY1aQ=="
+        target="_blank"
+      >
+        <img src="./assets/images/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Shcrew Graffiti. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
