@@ -418,6 +418,25 @@ footer {
     text-align: center;
   }
 
+  .hero-content h2 {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+    color: #ddd;
+  }
+
+  #home h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #home p {
+    font-size: 13px;
+  }
+
   ul.menu li {
     margin: 10px 0;
   }
